@@ -1,9 +1,14 @@
+#
+#
 ********Venom Changelog***********
+#        TheSkater187
+#
 *Initial Release (With Huge Help To Lord Boeffla)
 *Modified some scripting
 *Changed ZRAM compression to LZO
 * Few Other Odds & Ends
-
+#
+#
 ~~~~~~~~~~Venom-beta-2.0
 #*Added Uberdemand gov
 #*Aded Slim gov
@@ -13,18 +18,22 @@
 *Enabled FrontSwap
 *Enabled KSM
 *Set Default_Hostname to "Venom"
-
+#
+#
 ~~~~~~~~Venom-beta-3.0
 *updated to latest "Boeffla Source"
 *Not much more at this time
-
+#
+#
 ~~~~~~~~Venom-beta-3.1
 *disabled KSM Config
-
+#
+#
 ~~~~~~~~Venom-beta-3.2
 *Re-Enabled KSM
 *LZO Full Kernel Compression
-
+#
+#
 ~~~~~~~~Venom 4.0
 *returned full kernel comression to lz4
 *compcacche_clean enabled
@@ -34,79 +43,97 @@
 *CONFIG_RD_XZ=y
 *CONFIG_RD_LZO=y
 *CONFIG_RD_LZ4=y 
-
+#
+#
 ~~~~~~~Venom 5.0
 *Removed broken Adreno Idler
-
-
+#
+#
 ~~~~~~Venom 6.0
 *Update: Updated with latest official CM kernel/Boeffla Source commits as of 13.12.16, 4.40pm EST
 (Note: This removed all cpu boost functions, i.e. touchboost is also not available anymore)
 *PowerSuspend Added (Thanks Faux123)
 *Adreno Idler Back {should work now} (Thanks CrazyGamer)
-
+#
+#
 ~~~~~~Venom 7.0
 *Fix: Security vulnerability CVE-2015-8966 fixed
 *Fix: Security vulnerability CVE-2016-8655 fixed
-
+#
+#
 ~~~~~~Venom 7.1
 *Update: Updated with latest Boeffla/CM kernel commits as of 17.12.16, 2.00pm EST
 *Fix: CPU scaling issues are fixed
 *Change: Cleanup and sync with CM repo
-
+#
+#
 ~~~~~~Venom 7.2
 *Update: Latest official CM/Boeffla kernel commits as of 18.12.16, 12.00 EST
-
+#
+#
 ~~~~~~Venom 7.3
 *Updated with latest official CM/Boeffla kernel commits as of 23.12.16, 08.00 EST
 *UMS mode should be working again now (Thanks to Lord Boeffla)
-
+#
+#
 ~~~~~~Venom 7.4
 *Updated with latest official CM/Boeffla kernel commits as of 27.12.16, 08.00 EST
-
+#
+#
 ~~~~~~Venom 7.5
 *Updated to Latest CM/LineageOS/Boeffla Source as of 29.12.16, 09.45
 *Removed Adreno Idler (Not Working Still)
-
+#
+#
 ~~~~~~Venom 7.6
 *Updated to Latest official LineageOS/Boeffla Source as of 06.01.16, 05.54 EST
-
+#
+#
 ~~~~~~Venom 7.7
 *Updated to latest official LineageOS/Boeffla Source as of 11.01.16, 07.02 EST
 *Update Venom-Tweak Script (Disable All Kernel Sleepers)
-
+#
+#
 ~~~~~~Venom 7.8
 *Updated to latest official LineageOS/Boeffla Sourcecode
-
+#
+#
 ~~~~~~Venom 7.9
 *Updated to latest official LineageOS/Boeffla Sourcecode
-
+#
+#
 ~~~~~~Venom 8.0
-*Upated to latest official LineageOS/Boeffla Sources as of 10.02.16, 08.33 EST
+*Updated to latest official LineageOS/Boeffla Sources as of 10.02.16, 08.33 EST
 *Patched Kernel to Linux Version 3.4.113
-
+#
+#
 ~~~~~~Venom 8.1
-*Upated to latest official LineageOS/Boeffla Sources as of 13.02.16, 08.33 EST
-
+*Updated to latest official LineageOS/Boeffla Sources as of 13.02.16, 08.33 EST
+#
+#
 ~~~~~~Venom 8.2
-*Upated to latest official LineageOS/Boeffla Sources as of 22.02.16, 04.20 EST
-
+*Updated to latest official LineageOS/Boeffla Sources as of 22.02.16, 04.20 EST
+#
+#
 ~~~~~~Venom 8.3
-*Upated to latest official LineageOS/Boeffla Sources as of 01.03.17, 2.48 EST
-
+*Updated to latest official LineageOS/Boeffla Sources as of 01.03.17, 2.48 EST
+#
+#
 ~~~~~~Venom 8.4
-*Upated to latest official LineageOS/Boeffla Sources as of 09.03.17, 9.22 EST
+*Updated to latest official LineageOS/Boeffla Sources as of 09.03.17, 9.22 EST
 *Tweaked slimbus
-
+#
+#
 ~~~~~~Venom 8.5
-*Upated to latest official LineageOS/Boeffla Sources as of 04.04.17, 9.56 EST
-
-
+*Updated to latest official LineageOS/Boeffla Sources as of 04.04.17, 9.56 EST
+#
+#
 ~~~~~~Venom 8.6
-*Upated to latest official LineageOS/Boeffla Sources as of 06.30.17, 10.26 EST
-
+*Updated to latest official LineageOS/Boeffla Sources as of 06.30.17, 10.26 EST
+#
+#
 ~~~~~~Venom 8.7
-*Upated to latest official LineageOS/Boeffla Sources as of 08.07.17, 01.26 EST
+*Updated to latest official LineageOS/Boeffla Sources as of 08.07.17, 01.26 EST
 *Switched to Linaro Toolchain (GCC-4.9)
 *Fixed Camera
 *Fixed Nfc (For Kltespr Variant)
@@ -114,7 +141,8 @@
 *Upped External Storage Read-Ahead to 2048(default)
 *Added Back ability to make in-kernel busybox used system-wide
 *Added Intellithermal V.2 (thanks to Faux123 and SunilPaulMathew)
-
+#
+#
 ~~~~~~Venom 8.8
 *Compiled with Linaro (GCC-4.9.4)
 *Updated to latest LineageOS/Boeffla Sources as of 10.07.17
@@ -122,7 +150,8 @@
 *Added Adreno Idler (Thanks to Arter97/SunilPaulMathew/CrazyGamer)
 *Fixed Intelli-Thermal.V2
 *Added QuickWakeup
-
+#
+#
 ~~~~~~Venom 8.9
 *Updated to latest LineageOS/Boeffla Sources as of 10.13.17
 *Upstream to Linux 3.4.117
@@ -130,6 +159,12 @@
 *Enable Cortex_A15 Optimization
 *Fixed Recurring NFC Bug (KLTESPR Devices)
 *Incorporated fbs's modified (ALMK)Low Memory Killer
-
-
+#
+#
+~~~~~~Venom 8.9
+*Updated to latest LineageOS/Boeffla Sources as of 10.15.17
+*Updated fbs's modified (ALMK)Low Memory Killer
+*Disable KSM (For Better Memory Management)
+#
+#
 
