@@ -1,5 +1,7 @@
 /* drivers/misc/lowmemorykiller.c
  *
+ *Modified by fbs (XDA-Developers)
+ *
  * The lowmemorykiller driver lets user-space specify a set of memory thresholds
  * where processes with a range of oom_score_adj values will get killed. Specify
  * the minimum oom_score_adj values in
