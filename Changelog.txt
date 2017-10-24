@@ -154,14 +154,13 @@
 #
 ~~~~~~Venom 8.9
 *Updated to latest LineageOS/Boeffla Sources as of 10.13.17
-*Upstream to Linux 3.4.117
 *Added Mako Hotplugging
 *Enable Cortex_A15 Optimization
 *Fixed Recurring NFC Bug (KLTESPR Devices)
 *Incorporated fbs's modified (ALMK)Low Memory Killer
 #
 #
-~~~~~~Venom 8.9
+~~~~~~Venom 9.0
 *Updated to latest LineageOS/Boeffla Sources as of 10.15.17
 *Updated fbs's modified (ALMK)Low Memory Killer
 *Disable KSM (For Better Memory Management)
