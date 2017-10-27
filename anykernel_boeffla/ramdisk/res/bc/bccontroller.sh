@@ -19,7 +19,7 @@ KERNEL_SPECS="g900f;cm;cm14.0;http://kernel.boeffla.de/sgs5/boeffla-kernel-cm/;b
 # (1=enable-busybox,2=enable-frandom,3=wipe-cache,4=disable-zram-control)
 # (5=enable-default-zram-control,6=enable-selinux-switch, 7=enable-selinux-control)
 # (8=no-hotplugging,9=enable-doze-control)
-KERNEL_FEATURES="-1-3-4-5-6-7-9-"
+KERNEL_FEATURES="-1-3-4-5-6-7-8-9-"
 
 # path to kernel libraries
 LIBPATH="/system/lib/modules"
@@ -760,7 +760,7 @@ if [ "apply_governor_profile" == "$1" ]; then
 		echo "20000 1400000:40000 1700000:20000" > /sys/devices/system/cpu/cpufreq/interactive/above_hispeed_delay 
 		echo "0" > /sys/devices/system/cpu/cpufreq/interactive/boost 
 		echo "" > /sys/devices/system/cpu/cpufreq/interactive/boostpulse 
-		echo "80000" > /sys/devices/system/cpu/cpufreq/interactive/boostpulse_duration 
+		echo "60000" > /sys/devices/system/cpu/cpufreq/interactive/boostpulse_duration 
 		echo "95" > /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load 
 		echo "833200" > /sys/devices/system/cpu/cpufreq/interactive/hispeed_freq 
 		echo "1" > /sys/devices/system/cpu/cpufreq/interactive/io_is_busy 
@@ -781,12 +781,12 @@ if [ "apply_governor_profile" == "$1" ]; then
 		echo "20000 1400000:40000 1700000:20000" > /sys/devices/system/cpu/cpufreq/interactive/above_hispeed_delay 
 		echo "0" > /sys/devices/system/cpu/cpufreq/interactive/boost 
 		echo "" > /sys/devices/system/cpu/cpufreq/interactive/boostpulse 
-		echo "80000" > /sys/devices/system/cpu/cpufreq/interactive/boostpulse_duration 
+		echo "40000" > /sys/devices/system/cpu/cpufreq/interactive/boostpulse_duration 
 		echo "100" > /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load 
 		echo "300000" > /sys/devices/system/cpu/cpufreq/interactive/hispeed_freq 
 		echo "1" > /sys/devices/system/cpu/cpufreq/interactive/io_is_busy 
 		echo "5000" > /sys/devices/system/cpu/cpufreq/interactive/min_sample_time 
-		echo "100000" > /sys/devices/system/cpu/cpufreq/interactive/sampling_down_factor 
+		echo "10000" > /sys/devices/system/cpu/cpufreq/interactive/sampling_down_factor 
 		echo "1036800" > /sys/devices/system/cpu/cpufreq/interactive/sync_freq 
 		echo "85 900000:90 1200000:70" > /sys/devices/system/cpu/cpufreq/interactive/target_loads 
 		echo "100000" > /sys/devices/system/cpu/cpufreq/interactive/timer_rate 
@@ -1078,7 +1078,7 @@ if [ "apply_system_tweaks" == "$1" ]; then
 		busybox sync
 	fi
 
-	if [ "Boeffla tweaks" == "$2" ]; then
+	if [ "Boeffla Tweaks" == "$2" ]; then
 		echo "70" > /proc/sys/vm/dirty_background_ratio
 		echo "250" > /proc/sys/vm/dirty_expire_centisecs
 		echo "90" > /proc/sys/vm/dirty_ratio
@@ -1091,7 +1091,7 @@ if [ "apply_system_tweaks" == "$1" ]; then
 		busybox sync
 	fi
 
-	if [ "Speedmod tweaks" == "$2" ]; then
+	if [ "Speedmod Tweaks" == "$2" ]; then
 		echo "5" > /proc/sys/vm/dirty_background_ratio
 		echo "200" > /proc/sys/vm/dirty_expire_centisecs
 		echo "20" > /proc/sys/vm/dirty_ratio
@@ -1104,7 +1104,7 @@ if [ "apply_system_tweaks" == "$1" ]; then
 		busybox sync
 	fi
 
-	if [ "Mattiadj tweaks" == "$2" ]; then
+	if [ "Mattiadj Tweaks" == "$2" ]; then
 		echo "10" > /proc/sys/vm/dirty_background_ratio
 		echo "500" > /proc/sys/vm/dirty_expire_centisecs
 		echo "10" > /proc/sys/vm/dirty_ratio
@@ -1135,6 +1135,8 @@ if [ "apply_ext4_tweaks" == "$1" ]; then
 		busybox sync
 		busybox mount -o remount,commit=20,noatime $DATA_DEVICE /data
 		busybox sync
+        busybox mount -o remount,commit=20,noatime $SYSTEM_DEVICE /system
+		busybox sync
 	fi
 
 	if [ "0" == "$2" ]; then
@@ -1142,6 +1144,8 @@ if [ "apply_ext4_tweaks" == "$1" ]; then
 		busybox mount -o remount,commit=0,noatime $CACHE_DEVICE /cache
 		busybox sync
 		busybox mount -o remount,commit=0,noatime $DATA_DEVICE /data
+		busybox sync
+        busybox mount -o remount,commit=0,noatime $SYSTEM_DEVICE /system
 		busybox sync
 	fi
 	exit 0
