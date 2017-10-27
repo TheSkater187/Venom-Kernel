@@ -13,7 +13,7 @@
 # Parameters to be configured manually
 #######################################
 
-BOEFFLA_VERSION="-9.0_SM-G900*Los"
+BOEFFLA_VERSION="-9.1_SM-G900*Los"
 
 TOOLCHAIN="/opt/toolchains/4.9-linaro-master/bin/arm-linux-androideabi-"
 ARCHITECTURE=arm

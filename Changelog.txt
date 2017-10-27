@@ -1,7 +1,7 @@
-#
-#
 ********Venom Changelog***********
-#        TheSkater187
+#       The~Skater~187
+#           187~Mod
+#
 #
 *Initial Release (With Huge Help To Lord Boeffla)
 *Modified some scripting
@@ -103,37 +103,37 @@
 #
 #
 ~~~~~~Venom 8.0
-*Updated to latest official LineageOS/Boeffla Sources as of 10.02.16, 08.33 EST
+*Upated to latest official LineageOS/Boeffla Sources as of 10.02.16, 08.33 EST
 *Patched Kernel to Linux Version 3.4.113
 #
 #
 ~~~~~~Venom 8.1
-*Updated to latest official LineageOS/Boeffla Sources as of 13.02.16, 08.33 EST
+*Upated to latest official LineageOS/Boeffla Sources as of 13.02.16, 08.33 EST
 #
 #
 ~~~~~~Venom 8.2
-*Updated to latest official LineageOS/Boeffla Sources as of 22.02.16, 04.20 EST
+*Upated to latest official LineageOS/Boeffla Sources as of 22.02.16, 04.20 EST
 #
 #
 ~~~~~~Venom 8.3
-*Updated to latest official LineageOS/Boeffla Sources as of 01.03.17, 2.48 EST
+*Upated to latest official LineageOS/Boeffla Sources as of 01.03.17, 2.48 EST
 #
 #
 ~~~~~~Venom 8.4
-*Updated to latest official LineageOS/Boeffla Sources as of 09.03.17, 9.22 EST
+*Upated to latest official LineageOS/Boeffla Sources as of 09.03.17, 9.22 EST
 *Tweaked slimbus
 #
 #
 ~~~~~~Venom 8.5
-*Updated to latest official LineageOS/Boeffla Sources as of 04.04.17, 9.56 EST
+*Upated to latest official LineageOS/Boeffla Sources as of 04.04.17, 9.56 EST
 #
 #
 ~~~~~~Venom 8.6
-*Updated to latest official LineageOS/Boeffla Sources as of 06.30.17, 10.26 EST
+*Upated to latest official LineageOS/Boeffla Sources as of 06.30.17, 10.26 EST
 #
 #
 ~~~~~~Venom 8.7
-*Updated to latest official LineageOS/Boeffla Sources as of 08.07.17, 01.26 EST
+*Upated to latest official LineageOS/Boeffla Sources as of 08.07.17, 01.26 EST
 *Switched to Linaro Toolchain (GCC-4.9)
 *Fixed Camera
 *Fixed Nfc (For Kltespr Variant)
@@ -154,6 +154,7 @@
 #
 ~~~~~~Venom 8.9
 *Updated to latest LineageOS/Boeffla Sources as of 10.13.17
+*Upstream to Linux 3.4.117
 *Added Mako Hotplugging
 *Enable Cortex_A15 Optimization
 *Fixed Recurring NFC Bug (KLTESPR Devices)
@@ -161,9 +162,17 @@
 #
 #
 ~~~~~~Venom 9.0
-*Updated to latest LineageOS/Boeffla Sources as of 10.15.17
-*Updated fbs's modified (ALMK)Low Memory Killer
-*Disable KSM (For Better Memory Management)
+*Updated to latest LineageOS/Boeffla Sources as of 10.25.17
+*Fixed IntellithermalV2 (again)
+*Corrected Linux kernel version error
+*Added LCD Screen On/Off Hooks (Thanks to CrazyGamer & Yank555.lu)
 #
 #
+~~~~~~Venom 9.1
+*Enable 268 mhz underclock (Thanks to SunilPaulMatthew)
+*Added more overclock steps up 3072(Thanks To Ktoonsz)
+*Added more bandwith for higher cpu clock steps (Thanks To Ktoonsz)
+*Ktoonsz Slimbus Overclock
+
+
 
