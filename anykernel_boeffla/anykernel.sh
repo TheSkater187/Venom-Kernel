@@ -2,7 +2,7 @@
 #
 # Original and credits: osm0sis @ xda-developers
 #
-# Modified by Lord Boeffla, 05.12.2016
+# Modified by sunilpaulmathew @ xda-developers.com
 
 ############### AnyKernel setup start ############### 
 
@@ -22,10 +22,11 @@ device.name8=klte
 device.name9=kltekor
 device.name10=klteskt
 device.name11=kltektt
-device.name12=
+device.name12=kltekdi
 device.name13=
 device.name14=
 device.name15=
+# end properties
 
 # shell variables
 block=/dev/block/platform/msm_sdcc.1/by-name/boot;

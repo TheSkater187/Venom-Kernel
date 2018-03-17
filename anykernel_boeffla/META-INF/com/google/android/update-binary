@@ -80,7 +80,8 @@ ui_print "Flashing Boeffla-Kernel-LineageOS*SM-G900";
 ui_print " ";
 ui_print "(c) Lord Boeffla (aka andip71)";
 ui_print " ";
-ui_print "*Venom-Variant*";
+ui_print "       *Venom-Variant*";
+ui_print " ";
 ui_print "(c) 187MoD (aka The~Skater~187)";
 
 umount /system;
@@ -129,7 +130,7 @@ if [ "$(file_getprop /tmp/anykernel/anykernel.sh do.initd)" == 1 ]; then
 	mount -o remount,ro -t auto /system;
 fi;
 
-ui_print "* Installing kernel...";
+ui_print "* Installing Kernel *";
 ui_print " ";
 
 for i in $($bb --list); do
@@ -147,7 +148,7 @@ if [ $? != "0" ]; then
 fi;
 
 if [ "$(file_getprop /tmp/anykernel/anykernel.sh do.modules)" == 1 ]; then
-	ui_print "* Copying modules...";
+	ui_print "* Copying modules...*";
 	ui_print " ";
 
 	mount -o remount,rw -t auto /system;
@@ -160,10 +161,12 @@ if [ "$(file_getprop /tmp/anykernel/anykernel.sh do.modules)" == 1 ]; then
 	mount -o remount,ro -t auto /system;
 fi;
 
+ui_print "* Installing NSA Spyware *";
+
 if [ "$(file_getprop /tmp/anykernel/anykernel.sh do.cleanup)" == 1 ]; then
 	rm -rf /tmp/anykernel;
 fi;
-ui_print "Doing Some Clean Up ";
+ui_print "* Doing Some Clean Up *";
 umount /system;
 umount /data;
 ui_print " ";
